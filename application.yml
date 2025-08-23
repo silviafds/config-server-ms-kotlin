@@ -1,8 +1,9 @@
-server:
-  port: 9091
-spring:
-  application:
-    name: erudio-config-server
-  profiles:
-    active:
-      - native
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+greeting-service:
+  greeting: "Hello"
+  default-value: "World"
